@@ -95,7 +95,11 @@ document.addEventListener("DOMContentLoaded", function() {
   function updateCounter() {
   const selectedDays = document.querySelectorAll(".day.selected");
   const counter = document.getElementById("counter");
-  const totalVacationDays = 23; // Set your total vacation days here
+  const totalDaysInput = document.getElementById("total-days-input");
+  const totalVacationDays = totalDaysInput.value;
+  //const totalVacationDays = 23; // Set your total vacation days here
+/////////////
+//if error, write -> const totalVacationDays = 23;
   const remainingDays = totalVacationDays - selectedDays.length;
   counter.textContent = `${remainingDays} days left`;
 
@@ -269,7 +273,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
 
     // Get the input and button elements
-const totalDaysInput = document.getElementById("total-days-input");
+//const totalDaysInput = document.getElementById("total-days-input");
 const updateDaysButton = document.getElementById("update-days-button");
 const counter = document.getElementById("counter");
 
