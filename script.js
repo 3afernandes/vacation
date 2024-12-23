@@ -95,7 +95,7 @@ document.addEventListener("DOMContentLoaded", function() {
   function updateCounter() {
   const selectedDays = document.querySelectorAll(".day.selected");
   const counter = document.getElementById("counter");
-  const totalVacationDays = 23; // Set your total vacation days here - WIP!!!!!!
+  const totalVacationDays = 23; // Set your total vacation days here
   const remainingDays = totalVacationDays - selectedDays.length;
   counter.textContent = `${remainingDays} days left`;
 
