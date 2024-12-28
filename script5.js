@@ -48,6 +48,11 @@ document.addEventListener("DOMContentLoaded", function () {
         // Apply the calculated text color to various elements
         document.body.style.color = textColor;
         document.querySelector('h1').style.color = textColor;
+        document.querySelector('input').style.color = oppositeColor;
+        document.querySelector('input').style.borderColor = textColor;
+        document.querySelector('input').style.backgroundColor = randomColor;
+        document.querySelector('input').style.opacity = "0.7";
+        document.querySelector('input').style.mixBlendMode = "lighten";
 
       
         // Get the navigation bar element
@@ -268,12 +273,21 @@ document.addEventListener("DOMContentLoaded", function () {
     function toggleYearButtons() {
       const nextYearButton = document.getElementById("next-year-button");
       const currentYearButton = document.getElementById("current-year-button");
+      const yearTitle = document.getElementById("year-title");
+      const yearGroup = document.getElementById("toggle-year-btn");
       if (currentYear === new Date().getFullYear()) {
-        nextYearButton.style.display = "inline";
+        yearGroup.style.left = "50px";
+        nextYearButton.style.display = "flex";
+        nextYearButton.style.flexDirection = "row";
         currentYearButton.style.display = "none";
+        yearTitle.textContent = `${currentYear}`;
+        
       } else {
+        yearGroup.style.left= "-50px";
         nextYearButton.style.display = "none";
-        currentYearButton.style.display = "inline";
+        currentYearButton.style.display = "flex";
+        currentYearButton.style.flexDirection = "row-reverse";
+        yearTitle.textContent = `${currentYear}`;
       }
     }
 

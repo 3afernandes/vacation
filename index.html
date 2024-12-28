@@ -5,18 +5,38 @@
   <title>Vacation Planner</title>
   <link rel="stylesheet" type="text/css" href="style.css">
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
-</head>
-<body>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+
+  <body>
   <nav class="navbar" id="navbar">
     <h1>Vacation Planner</h1>
-    <input type="number" id="total-days-input" placeholder="Enter your total vacation days">
-<button id="update-days-button">Update</button>
-<button id="next-year-button">Next Year</button>
-<button id="current-year-button" style="display:none;">Current Year</button>
+    <div class="input-group">
+      <label class="visually-hidden" id="total-days-label">Enter your vacation days</label>
+      <input type="number" id="total-days-input" >
+      <button id="update-days-button">Update days left</button>
+    </div>
+ 
+
     <div class="counter" id="counter">
-      <span id="days-left">14 days left</span>
+      <span id="days-left"> 0 days left</span>
     </div>
   </nav>
+  <div id="year-group" class="year-group">
+    <div id="toggle-year-btn" class="toggle-year-btn">
+      <button id="current-year-button" style="display:none;">
+        <span class="material-icons md-48" title="Current year">
+          keyboard_arrow_left
+          </span>
+      </button>
+      <h2 id="year-title"></h2>
+      <button id="next-year-button">
+        <span class="material-icons md-48" title="Next year">
+          keyboard_arrow_right
+          </span>
+      </button>
+    </div>
+  </div>
   <div id="calendar" class="calendar"></div>
   <script src="script5.js"></script>
 
