@@ -61,7 +61,7 @@ h1 {
 
 
 #total-days-input {
-  width: fit-content;
+  width: 10vw
   font-family: inherit;
   padding: 15px;
   border-radius: 1ch;
@@ -283,7 +283,7 @@ a,button {
     }
 
     #total-days-input {
-      max-width: 50vw;
+      width: 50vw;
       max-height: fit-content;
     }
 
