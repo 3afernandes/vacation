@@ -57,6 +57,7 @@ document.addEventListener("DOMContentLoaded", function () {
       
         // Get the navigation bar element
         const navbar = document.getElementById('navbar');
+        const navbarContent = document.getElementById('days-left-group');
       
         // Detect when the user scrolls
         window.addEventListener('scroll', () => {
@@ -66,11 +67,15 @@ document.addEventListener("DOMContentLoaded", function () {
         navbar.style.position = 'fixed';
         navbar.style.top = '0';
         navbar.style.transition = 'position 0.3s ease-in-out'; // Smooth transition for position
+        navbarContent.style.display = 'none'; //Hide inputs when scrolling
+        navbar.style.backgroundImage =  navbar.style.backgroundImage = `linear-gradient(to bottom, ${randomColor} 60%, rgba(0,0,0,0))`; //Make a gradient on the navbar whe scrolling
         } else {
         // If no, reset the navigation bar's position and transition
         navbar.style.position = 'relative';
         navbar.style.top = 'auto';
         navbar.style.transition = 'none'; // Remove transition
+        navbarContent.style.display = 'flex';
+        navbar.style.backgroundImage = 'none';
         }
         });
       

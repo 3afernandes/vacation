@@ -42,7 +42,8 @@ h1 {
   padding: 36px 135px 80px; /* Adjust the left and right padding to 180px */
   box-sizing: border-box;
   z-index: 1;
-  transition: position 0.5s cubic-bezier(0.22, 1, 0.36, 1); /* Use cubic bezier for smoother transition */}
+  transition: position 0.5s cubic-bezier(0.22, 1, 0.36, 1); /* Use cubic bezier for smoother transition */
+}
 
 
 /* Adjust the text color of the title and days left */
@@ -174,7 +175,7 @@ a,button {
   gap: 23px;
   text-align: center;
   font-weight: 500;
-  opacity: 0.7;
+  opacity: 0.6
   /* color: #999; */
 }
 
@@ -197,7 +198,7 @@ a,button {
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 20px; /* Increase the font size */
+  font-size: 24px; /* Increase the font size */
   cursor: pointer;
   user-select: none;
   border-radius: 50%; /* Set the border radius to create circles */
@@ -258,4 +259,48 @@ a,button {
   background-color: transparent;
   border: none;
   cursor: pointer;
+}
+
+
+@media only screen and (max-width: 600px) {
+  body {
+    .month {
+      width: 100vw;
+    }
+
+    .navbar {
+      flex-direction: column;
+      align-items: flex-start;
+      margin: 0;
+      padding: 10vw;
+      gap: 20px
+    }
+
+    .day-names-container {
+      gap: 5px;
+      text-align: center;
+      font-weight: 600;
+    }
+
+    #total-days-input {
+      max-width: 50vw;
+      max-height: fit-content;
+    }
+
+    .input-group {
+      flex-direction: column;
+    }
+
+    .days-left-group {
+      flex-direction: column-reverse;
+    }
+
+    .day {
+      width: 44px; /* Increase the width for slightly bigger circles */
+      height: 44px; /* Increase the height for slightly bigger circles */
+      font-size: 22px; /* Increase the font size */
+      font-weight: 600; 
+    }
+    
+  }
 }
