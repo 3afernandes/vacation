@@ -104,13 +104,13 @@ document.addEventListener("DOMContentLoaded", function () {
     const holidays = {
       [currentYear]: [
         `${currentYear}-01-01`, // New Year's Day
-        `${currentYear}-02-17`, // Carnaval >>>>> Móvel
-        `${currentYear}-04-03`, // Sexta Feira Santa >>>>> Móvel
+        `${currentYear}-03-04`, // Carnaval >>>>> Móvel
+        `${currentYear}-04-18`, // Sexta Feira Santa >>>>> Móvel
         `${currentYear}-04-25`, // Liberation Day
         `${currentYear}-05-01`, // Labor Day
         `${currentYear}-06-10`, // Portugal Day
         `${currentYear}-06-13`, // Santo António Day (Lisbon)
-        `${currentYear}-06-04`, // Corpus Cristi >>>>> Móvel
+        `${currentYear}-06-19`, // Corpus Cristi >>>>> Móvel
         `${currentYear}-08-15`, // Assumption Day
         `${currentYear}-10-05`, // Republic Day
         `${currentYear}-11-01`, // All Saints' Day
@@ -120,13 +120,13 @@ document.addEventListener("DOMContentLoaded", function () {
       ],
       [currentYear + 1]: [
         `${currentYear + 1}-01-01`, // New Year's Day
-        `${currentYear + 1}-03-04`, // Carnaval >>>>> Móvel
-        `${currentYear + 1}-04-18`, // Sexta Feira Santa >>>>> Móvel
+        `${currentYear + 1}-02-17`, // Carnaval >>>>> Móvel
+        `${currentYear + 1}-04-03`, // Sexta Feira Santa >>>>> Móvel
         `${currentYear + 1}-04-25`, // Liberation Day
         `${currentYear + 1}-05-01`, // Labor Day
         `${currentYear + 1}-06-10`, // Portugal Day
         `${currentYear + 1}-06-13`, // Santo António Day (Lisbon)
-        `${currentYear + 1}-06-19`, // Corpus Cristi >>>>> Móvel
+        `${currentYear + 1}-06-04`, // Corpus Cristi >>>>> Móvel
         `${currentYear + 1}-08-15`, // Assumption Day
         `${currentYear + 1}-10-05`, // Republic Day
         `${currentYear + 1}-11-01`, // All Saints' Day
@@ -317,5 +317,6 @@ document.addEventListener("DOMContentLoaded", function () {
     updateCounter();
     toggleYearButtons();
   });
+
 
 
