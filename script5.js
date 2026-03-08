@@ -105,7 +105,7 @@ document.addEventListener("DOMContentLoaded", function () {
       [currentYear]: [
         `${currentYear}-01-01`, // New Year's Day
         `${currentYear}-02-17`, // Carnaval >>>>> Móvel
-        `${currentYear}-04-3`, // Sexta Feira Santa >>>>> Móvel
+        `${currentYear}-04-03`, // Sexta Feira Santa >>>>> Móvel
         `${currentYear}-04-25`, // Liberation Day
         `${currentYear}-05-01`, // Labor Day
         `${currentYear}-06-10`, // Portugal Day
@@ -317,6 +317,7 @@ document.addEventListener("DOMContentLoaded", function () {
     updateCounter();
     toggleYearButtons();
   });
+
 
 
 
